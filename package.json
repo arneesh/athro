@@ -1,6 +1,6 @@
 {
   "name": "athro",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A library for javascript which contains basic datastructures, algorithms and some generic functionalities which a developer needs",
   "main": "index.js",
   "scripts": {
