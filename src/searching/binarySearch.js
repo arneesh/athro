@@ -1,7 +1,7 @@
 
 
 
-function binarySearch(arr,num){
+export default  binarySearch(arr,num) =>{
 
   let low = 0;
   let high= arr.length -1 ;
@@ -20,10 +20,8 @@ function binarySearch(arr,num){
     }
 
   }
-
   return -1;
 
 }
 
-export {binarySearch}
 // console.log("Element found : ", binarySearch([1,2,3,4,5], 7))
