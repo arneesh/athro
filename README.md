@@ -2,7 +2,7 @@
 
 # Data Structures | Algorithms | Generics
 
-A library for javascript which contains basic data structures, algorithms and some generic functionalities which a developer needs
+A library for javascript which contains basic data structures, algorithms and some generic functions which a developer needs : UNDERCONSTRUCTION
 
 ## Functionalities
 This sections explains the functionalities provided by this library
