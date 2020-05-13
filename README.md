@@ -4,8 +4,21 @@
 
 # Data Structures | Algorithms | Generics
 
-A library for javascript which contains basic datastructures, algorithms and some generic functionalities which a developer needs
+A library for javascript which contains basic data structures, algorithms and some generic functionalities which a developer needs
 
+## Functionalities
+This sections explains the functionalities provided by this libraries
+
+### Searching
+Searching functionalities inbuilt in this library are:
+
+#### Binary Search
+```
+Pass the array of numbers/string along the the element which needs to be found
+
+import { binarySearch } from 'athro';
+```
+* **Syntax** - *params: binarySearch(array,element)  * -
 
 ## Author
 
