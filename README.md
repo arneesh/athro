@@ -1,6 +1,4 @@
 
-# ---------- UNDERCONSTRUCTION ------------
-
 
 # Data Structures | Algorithms | Generics
 
@@ -14,12 +12,94 @@ Searching functionalities inbuilt in this library are:
 
 #### Binary Search
 ```
-Pass the array of numbers/string along the the element which
+Pass the array of numbers/string along with the element which
 needs to be found
 
 import { binarySearch } from 'athro';
 ```
 * **Syntax** - *params: binarySearch(array,element)* -
+
+#### Linear Search
+```
+Pass the array of numbers/string along with the element which
+needs to be found
+
+import { linearSearch } from 'athro';
+```
+* **Syntax** - *params: linearSearch(array,element)* -
+
+### Sorting
+Sorting functionalities inbuilt in this library are:
+
+#### Bubble Sort
+```
+Pass the array of numbers/strings which needs to be sorted
+
+import { bubbleSort } from 'athro';
+```
+* **Syntax** - *params: bubbleSort(array)* -
+
+#### Selection Sort
+```
+Pass the array of numbers/strings which needs to be sorted
+
+import { selectionSort } from 'athro';
+```
+* **Syntax** - *params: selectionSort(array)* -
+
+#### Insertion Sort
+```
+Pass the array of numbers/strings which needs to be sorted
+
+import { insertionSort } from 'athro';
+```
+* **Syntax** - *params: insertionSort(array)* -
+
+### Generics
+
+#### Title Case
+```
+Pass a string to convert to title case i.e "hello world  => Hello World"
+
+import { titleCase } from 'athro';
+```
+* **Syntax** - *params: titleCase(array)* -
+
+#### Decimal Handler
+```
+Pass a decimal/floating point number and decimal places upto which you want to round it to"
+
+import { handleDecimal } from 'athro';
+```
+* **Syntax** - *params: handleDecimal(number,decimal)* -
+
+#### Beautify Date
+```
+Pass date object to convert it to -> sample : Jan 21 2020 format (Month Day Year)"
+
+import { beautifyDate } from 'athro';
+```
+* **Syntax** - *params: beautifyDate(date)* -
+
+#### Beautify Number
+```
+Pass number to convert to to a much more readable format -> sample : 10186438.12 gets converted to 10,186,438 "
+
+import { beautifyNumber } from 'athro';
+```
+* **Syntax** - *params: beautifyNumber(number)* -
+
+
+#### Currency Symbol
+```
+Pass currency code to return the symbol for the currency -> sample : USD gets converted to $ "
+
+import { currencySymbol } from 'athro';
+```
+* **Syntax** - *params: currencySymbol(code)* -
+
+
+
 
 ## Author
 
