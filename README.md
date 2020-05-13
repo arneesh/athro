@@ -2,9 +2,9 @@
 # UNDERCONSTRUCTION
 
 
-# Data StructureS, Algorithms and other generic functionalities in Javascript
+# Data Structure | Algorithms | Generics
 
-This repository contains my solutions for the course
+A library for javascript which contains basic datastructures, algorithms and some generic functionalities which a developer needs
 
 
 ## Author
