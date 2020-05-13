@@ -5,7 +5,9 @@
 A library for javascript which contains basic data structures, algorithms and some generic functions which a developer needs : UNDERCONSTRUCTION
 
 ## Functionalities
-This sections explains the functionalities provided by this library
+This sections explains the functionalities provided by this library. This library can be used along with any other javascript framework/library such as Angular, React, Vue etc.
+
+**Note:** All the import mention in the sections below follow Javascript ES6 Format
 
 ### Searching
 Searching functionalities inbuilt in this library are:
