@@ -64,6 +64,15 @@ import { insertionSort } from 'athro';
 ```
 * **Syntax** - *params: insertionSort(array)*
 
+#### Merge Sort
+```
+Pass the array of numbers/strings which needs to be sorted
+
+import { mergeSort } from 'athro';
+```
+* **Syntax** - *params: mergeSort(array)*
+
+
 ---
 
 ### Generics
