@@ -30,7 +30,6 @@ import { linearSearch } from 'athro';
 
 ---
 
-
 ### Sorting
 Sorting functionalities inbuilt in this library are:
 
@@ -57,6 +56,8 @@ Pass the array of numbers/strings which needs to be sorted
 import { insertionSort } from 'athro';
 ```
 * **Syntax** - *params: insertionSort(array)*
+
+---
 
 ### Generics
 
