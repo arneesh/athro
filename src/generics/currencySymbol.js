@@ -1,5 +1,5 @@
 
-export const currencySymbol => {
+export const currencySymbol = currencyCode => {
   const currencySymbols = [
     {
       Country: 'New Zealand',
