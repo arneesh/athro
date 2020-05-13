@@ -60,6 +60,7 @@ import { insertionSort } from 'athro';
 ---
 
 ### Generics
+Some generic functions which are often useful while development - saves time:
 
 #### Title Case
 ```
