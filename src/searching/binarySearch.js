@@ -1,7 +1,7 @@
 
 
 
-export default  binarySearch = (arr,num) =>{
+export const  binarySearch = (arr,num) =>{
 
   let low = 0;
   let high= arr.length -1 ;
@@ -22,6 +22,6 @@ export default  binarySearch = (arr,num) =>{
   }
   return -1;
 
-}
+};
 
 // console.log("Element found : ", binarySearch([1,2,3,4,5], 7))
