@@ -1,7 +1,7 @@
 
 
 
-export default  binarySearch(arr,num) =>{
+export default  binarySearch = (arr,num) =>{
 
   let low = 0;
   let high= arr.length -1 ;
