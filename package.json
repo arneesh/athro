@@ -16,7 +16,19 @@
     "searching",
     "sorting",
     "graphs",
-    "trees"
+    "trees",
+    "reactjs",
+    "vuejs",
+    "javascript",
+    "nodejs",
+    "angular",
+    "expressjs",
+    "ember.js",
+    "meteor",
+    "mithril",
+    "backbone.js",
+    "polymer",
+    "svelte"
   ],
   "author": "arneeshaima",
   "license": "ISC"
