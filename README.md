@@ -14,11 +14,12 @@ Searching functionalities inbuilt in this library are:
 
 #### Binary Search
 ```
-Pass the array of numbers/string along the the element which needs to be found
+Pass the array of numbers/string along the the element which
+needs to be found
 
 import { binarySearch } from 'athro';
 ```
-* **Syntax** - *params: binarySearch(array,element)  * -
+* **Syntax** - *params: binarySearch(array,element)* -
 
 ## Author
 
