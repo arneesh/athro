@@ -79,7 +79,7 @@ import { titleCase } from 'athro';
 
 #### Decimal Handler
 ```
-Pass a decimal/floating point number and decimal places upto which you want to round it to"
+Pass a decimal/floating point number and decimal places upto which you want to round it to
 
 import { handleDecimal } from 'athro';
 ```
@@ -87,7 +87,7 @@ import { handleDecimal } from 'athro';
 
 #### Beautify Date
 ```
-Pass date object to convert it to -> sample : Jan 21 2020 format (Month Day Year)"
+Pass date object to convert it to -> sample : Jan 21 2020 format (Month Day Year)
 
 import { beautifyDate } from 'athro';
 ```
@@ -95,7 +95,7 @@ import { beautifyDate } from 'athro';
 
 #### Beautify Number
 ```
-Pass number to convert to to a much more readable format -> sample : 10186438.12 gets converted to 10,186,438 "
+Pass number to convert to to a much more readable format -> sample : 10186438.12 gets converted to 10,186,438
 
 import { beautifyNumber } from 'athro';
 ```
@@ -104,7 +104,7 @@ import { beautifyNumber } from 'athro';
 
 #### Currency Symbol
 ```
-Pass currency code to return the symbol for the currency -> sample : USD gets converted to $ "
+Pass currency code to return the symbol for the currency -> sample : USD gets converted to $
 
 import { currencySymbol } from 'athro';
 ```
