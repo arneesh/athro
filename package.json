@@ -1,0 +1,23 @@
+{
+  "name": "athro",
+  "version": "1.0.0",
+  "description": "A library for javascript which contains basic datastructures, algorithms and some generic functionalities which a developer needs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "datastructures",
+    "algorithms",
+    "generics",
+    "date",
+    "decimal",
+    "titlecase",
+    "searching",
+    "sorting",
+    "graphs",
+    "trees"
+  ],
+  "author": "arneeshaima",
+  "license": "ISC"
+}
