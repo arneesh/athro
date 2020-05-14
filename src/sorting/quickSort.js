@@ -22,7 +22,7 @@ function partition(array,start = 0,end = array.length -1){
 
 }
 
-export const quickSort (arr, left =0 , right = arr.length -1 ){
+export const quickSort  = (arr, left =0 , right = arr.length -1 ) =>{
 
   if(left < right){
     let pivotIndex = partition(arr,left,right);
