@@ -72,6 +72,14 @@ import { mergeSort } from 'athro';
 ```
 * **Syntax** - *params: mergeSort(array)*
 
+#### Quick Sort
+```
+Pass the array of numbers/strings which needs to be sorted
+
+import { quickSort } from 'athro';
+```
+* **Syntax** - *params: quickSort(array)*
+
 
 ---
 
