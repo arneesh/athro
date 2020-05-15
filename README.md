@@ -4,11 +4,11 @@
 
 A library for javascript which contains basic data structures, algorithms and some generic functions which a developer needs : UNDERCONSTRUCTION
 
-**Note:** Kindly keep updating the library every now and them as I am constantly adding new stuff to the library almost on daily basis.
+**Note:** Kindly keep updating the library every now and then as I am constantly adding new stuff to the library almost on daily basis.
 
-You can Update the library in your project by running the following command in the directory of your project which contains the file package.json  :
+You can Update the library in your project by running the following command in the directory of your project which contains the file - package.json  :
 ```
-npm update 'athro';
+npm update athro;
 ```
 
 ## Functionalities
