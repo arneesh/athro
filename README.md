@@ -150,6 +150,23 @@ import { arrayDifference } from 'athro';
 ```
 * **Syntax** - *params: arrayDifference(array1,array2)*
 
+#### Count Occurrences
+```
+Pass an array and an element to count the occurrences of that element in the array.
+
+import { countOccurrences } from 'athro';
+```
+* **Syntax** - *params: countOccurrences(array,element)*
+
+#### Bifurcate Array
+```
+Pass an array and a bifurcation function by which the array is supposed to be converted into two separate arrays.
+sample -> passing (['chair', 'chart', 'chin', 'king'], x => x[0] === 'c') returns [ ['chair', 'chart', 'chin'], ['king'] ]
+
+import { bifurcateArray } from 'athro';
+```
+* **Syntax** - *params: bifurcateArray(array,fn)*
+
 
 
 ## Author
