@@ -11,6 +11,7 @@ export {insertionSort} from './src/sorting/insertionSort';
 export {mergeSort} from './src/sorting/mergeSort';
 export {quickSort} from './src/sorting/quickSort';
 
+
 //==============Generics==============
 export {titleCase} from './src/generics/titleCase';
 export {beautifyDate} from './src/generics/beautifyDate';
