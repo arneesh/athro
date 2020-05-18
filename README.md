@@ -134,6 +134,21 @@ import { currencySymbol } from 'athro';
 ```
 * **Syntax** - *params: currencySymbol(code)*
 
+#### Array Remove Duplicates
+```
+Pass an array to the function and duplicates values would be removed from the array that is returned.
+
+import { arrayRemoveDuplicates } from 'athro';
+```
+* **Syntax** - *params: arrayRemoveDuplicates(array)*
+
+#### Array Difference
+```
+Pass two arrays to the function and their difference is returned -> sample : pass ([1,2,6,9,4,3],[1,2,6,3]) returned array is [9,4].
+
+import { arrayDifference } from 'athro';
+```
+* **Syntax** - *params: arrayDifference(array1,array2)*
 
 
 
