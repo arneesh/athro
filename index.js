@@ -22,3 +22,10 @@ export {arrayDifference} from './src/generics/arrayDifference';
 export {arrayRemoveDuplicates} from './src/generics/arrayRemoveDuplicates';
 export {countOccurrences} from './src/generics/countOccurrences';
 export {bifurcateArray} from './src/generics/bifurcateArray';
+
+//============Add Tree Trvaersal Here===================
+
+
+//============Data Structures===================
+
+export { SinglyLinkedList } from './src/dataStructures/linkedList/SinglyLinkedList';
