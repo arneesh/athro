@@ -24,8 +24,16 @@ export {countOccurrences} from './src/generics/countOccurrences';
 export {bifurcateArray} from './src/generics/bifurcateArray';
 
 //============Add Tree Trvaersal Here===================
+export { bfs } from './src/treeTraversal/bfs';
+export { inOrder } from './src/treeTraversal/inOrder';
+export { preOrder } from './src/treeTraversal/preOrder';
+export { postOrder } from './src/treeTraversal/postOrder';
 
 
 //============Data Structures===================
 
 export { SinglyLinkedList } from './src/dataStructures/linkedList/SinglyLinkedList';
+export { DoublyLinkedList } from './src/dataStructures/linkedList/DoublyLinkedList';
+export { Queue } from './src/dataStructures/queue/Queue';
+export { Stack } from './src/dataStructures/stack/Stack';
+export { BinarySearchTree } from './src/dataStructures/trees/BinarySearchTree';

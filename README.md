@@ -90,6 +90,139 @@ import { quickSort } from 'athro';
 
 ---
 
+### Data Structures
+Some famous useful data structure:
+
+#### Singly Linked List
+```
+Usage: import and use the class through its instance methods
+
+import { SinglyLinkedList } from 'athro';
+
+var list = new SinglyLinkedList();
+
+```
+
+| Methods | Usage  | Syntax  |
+| :---:   | :-: | :-: |
+| insert | Add item to SLL | list.insert(index,value) |
+| remove | Remove item from SLL | list.remove(index) |
+| get | Get item from SLL | list.get(index) |
+| set | Update value of item in SLL | list.set(index,value) |
+| reverse | Reverse the entire SLL | list.reverse() |
+
+
+#### Doubly Linked List
+```
+Usage: import and use the class through its instance methods
+
+import { DoublyLinkedList } from 'athro';
+
+var list = new DoublyLinkedList();
+
+```
+
+| Methods | Usage  | Syntax  |
+| :---:   | :-: | :-: |
+| insert | Add item to DLL | list.insert(index,value) |
+| remove | Remove item from DLL | list.remove(index) |
+| get | Get item from DLL | list.get(index) |
+| set | Update value of item in DLL | list.set(index,value) |
+
+
+#### Queue
+```
+Usage: import and use the class through its instance methods.
+FIFO : Insert from "Rear" extract from "Front"
+
+import { Queue } from 'athro';
+
+var queue = new Queue();
+
+```
+
+| Methods | Usage  | Syntax  |
+| :---:   | :-: | :-: |
+| enqueue | Enqueue an item in the Queue from the rear | queue.enqueue(value) |
+| dequeue | Dequeue an item from front of the Queue | queue.dequeue() |
+| peek | View the item at front of Queue | queue.peek() |
+| isEmpty | Check if the Queue is empty | queue.isEmpty() |
+
+
+#### Stack
+```
+Usage: import and use the class through its instance methods.
+LIFO Datastructure
+
+import { Stack } from 'athro';
+
+var stack = new Stack();
+
+```
+
+| Methods | Usage  | Syntax  |
+| :---:   | :-: | :-: |
+| push | Add an item to top of Stack | stack.push(value) |
+| pop | Pop an item from top of stack | stack.pop() |
+| top | View the item at top of Stack | stack.top() |
+| isEmpty | Check if the Stack is empty | stack.isEmpty() |
+
+
+#### Binary Search Tree
+```
+Usage: import and use the class through its instance methods.
+
+import { BinarySearchTree } from 'athro';
+
+var tree = new BinarySearchTree();
+
+```
+
+| Methods | Usage  | Syntax  |
+| :---:   | :-: | :-: |
+| insert | Add an item to the BST | tree.insert(value) |
+| find | Find an item in the BST | tree.find(value) |
+
+---
+
+### Tree Traversal
+Some famous tree traversals:
+
+#### Breadth First Search
+```
+Get the nodes of tree breadth/level wise
+
+import { bfs } from 'athro';
+```
+* **Syntax** - *params: bfs(root)*
+
+#### Depth First Search - In Order
+```
+Get the nodes of tree as per DFS in order format
+
+import { inOrder } from 'athro';
+```
+* **Syntax** - *params: inOrder(root)*
+
+#### Depth First Search - Pre Order
+```
+Get the nodes of tree as per DFS pre order format
+
+import { preOrder } from 'athro';
+```
+* **Syntax** - *params: preOrder(root)*
+
+#### Depth First Search - Post Order
+```
+Get the nodes of tree as per DFS post order format
+
+import { postOrder } from 'athro';
+```
+* **Syntax** - *params: postOrder(root)*
+
+
+---
+
 ### Generics
 Some generic functions which are often useful while development - saves time:
 
