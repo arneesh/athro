@@ -4,7 +4,7 @@
 
 A library for javascript which contains basic data structures, algorithms and some generic functions which a developer needs.
 
-Recent Updates: Singly Linked List, Doubly Linked List, Queue, Stack, Binary Search Tree and Tree Traversals.
+**Recent Updates:** Singly Linked List, Doubly Linked List, Queue, Stack, Binary Search Tree and Tree Traversals.
 
 **Note:** Kindly keep updating the library every now and then as I am frequently adding new stuff to the library.
 
