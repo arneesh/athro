@@ -1,5 +1,5 @@
 // left right root
-   export const postOrder(root) => {
+   export const postOrder = (root) => {
     if(root === null || root === undefined) return root;
     var visited = [];
     var current = root;
