@@ -3,7 +3,7 @@
 # Data Structures | Algorithms | Generics
 
 
-![alt text](https://github.com/arneeshaima/athro/blob/master/logo.png?raw=true)
+![alt text](https://raw.githubusercontent.com/arneesh/athro/master/logo.png)
 
 
 A library for javascript which contains basic data structures, algorithms and some generic functions which a developer needs.
