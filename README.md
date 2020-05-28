@@ -2,6 +2,10 @@
 
 # Data Structures | Algorithms | Generics
 
+
+![alt text](https://github.com/arneeshaima/athro/blob/master/logo.png?raw=true)
+
+
 A library for javascript which contains basic data structures, algorithms and some generic functions which a developer needs.
 
 **Recent Updates:** Singly Linked List, Doubly Linked List, Queue, Stack, Binary Search Tree and Tree Traversals.
