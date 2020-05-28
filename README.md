@@ -6,6 +6,7 @@
 ![alt text](https://raw.githubusercontent.com/arneesh/athro/master/logo.png)
 
 
+
 A library for javascript which contains basic data structures, algorithms and some generic functions which a developer needs.
 
 **Recent Updates:** Singly Linked List, Doubly Linked List, Queue, Stack, Binary Search Tree and Tree Traversals.
