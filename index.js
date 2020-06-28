@@ -1,4 +1,10 @@
 
+/*
+MIT License
+
+Copyright (c) 2020 Arneesh Aima
+*/
+
 //==============Searching==============
 export {binarySearch} from './src/searching/binarySearch';
 export {linearSearch} from './src/searching/linearSearch';
