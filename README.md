@@ -3,7 +3,7 @@
 # Data Structures | Algorithms | Generics
 
 
-![alt text](https://raw.githubusercontent.com/arneesh/athro/master/athrologo10.png)
+<!-- ![alt text](https://raw.githubusercontent.com/arneesh/athro/master/athrologo10.png) -->
 
 
 
