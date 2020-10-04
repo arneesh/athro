@@ -30,6 +30,11 @@ export {arrayDifference} from './src/generics/arrayDifference';
 export {arrayRemoveDuplicates} from './src/generics/arrayRemoveDuplicates';
 export {countOccurrences} from './src/generics/countOccurrences';
 export {bifurcateArray} from './src/generics/bifurcateArray';
+export {maxNArray} from './src/generics/maxNArray';
+
+//============Casing===================
+export {toSnakeCase} from './src/casing/toSnakeCase';
+
 
 //============Add Tree Trvaersal Here===================
 export { bfs } from './src/treeTraversal/bfs';
