@@ -4,7 +4,7 @@
   "description": "A library for javascript which contains basic datastructures, algorithms and some generic functionalities which a developer needs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "data structures",
@@ -46,5 +46,8 @@
     "svelte"
   ],
   "author": "arneeshaima",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
 }
