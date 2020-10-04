@@ -33,6 +33,7 @@ export {bifurcateArray} from './src/generics/bifurcateArray';
 export {maxNArray} from './src/generics/maxNArray';
 export {toSnakeCase} from './src/generics/toSnakeCase';
 export {slugifyString} from './src/generics/slugifyString';
+export {addStringPadding} from './src/generics/addStringPadding';
 
 
 //============Add Tree Trvaersal Here===================
