@@ -31,9 +31,8 @@ export {arrayRemoveDuplicates} from './src/generics/arrayRemoveDuplicates';
 export {countOccurrences} from './src/generics/countOccurrences';
 export {bifurcateArray} from './src/generics/bifurcateArray';
 export {maxNArray} from './src/generics/maxNArray';
-
-//============Casing===================
-export {toSnakeCase} from './src/casing/toSnakeCase';
+export {toSnakeCase} from './src/generics/toSnakeCase';
+export {slugifyString} from './src/generics/slugifyString';
 
 
 //============Add Tree Trvaersal Here===================
