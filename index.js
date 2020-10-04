@@ -32,6 +32,7 @@ export {countOccurrences} from './src/generics/countOccurrences';
 export {bifurcateArray} from './src/generics/bifurcateArray';
 export {maxNArray} from './src/generics/maxNArray';
 export {toSnakeCase} from './src/generics/toSnakeCase';
+export {slugifyString} from './src/generics/slugifyString';
 
 
 //============Add Tree Trvaersal Here===================
