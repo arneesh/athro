@@ -1,4 +1,4 @@
-import {arrayRemoveDuplicates}  from '../generics/arrayRemoveDuplicates';
+const arrayRemoveDuplicates =  require('../index/arrayRemoveDuplicates');
 
 
 test('adds 1 + 2 to equal 3', () => {
