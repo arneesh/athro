@@ -1,9 +1,8 @@
 export const binarySearch = (arr: number[], num: number): number => {
     let low = 0;
     let high = arr.length - 1;
-    let middle;
     while (low <= high) {
-        middle = Math.floor(low + (high - low) / 2);
+        let middle = Math.floor(low + (high - low) / 2);
         if (num === arr[middle]) {
             return middle;
         }
@@ -16,3 +15,5 @@ export const binarySearch = (arr: number[], num: number): number => {
     }
     return -1;
 };
+
+console.log('Element found : ', binarySearch([1, 2, 5, 6, 8], 5));
