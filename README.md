@@ -2,21 +2,9 @@
 
 # Data Structures | Algorithms | Generics
 
-
-<!-- ![alt text](https://raw.githubusercontent.com/arneesh/athro/master/athrologo10.png) -->
-
-
-
-A library for javascript which contains basic data structures, algorithms and some generic functions which a developer needs.
+A library for typescript/javascript which contains basic data structures, algorithms and some generic functions.
 
 **Recent Updates:** Singly Linked List, Doubly Linked List, Queue, Stack, Binary Search Tree and Tree Traversals.
-
-**Note:** Kindly keep updating the library every now and then as I am frequently adding new stuff to the library.
-
-You can Update the library in your project by running the following command in the directory of your project which contains the file - package.json  :
-```
-npm update athro;
-```
 
 ## Functionalities
 This sections explains the functionalities provided by this library. This library can be used along with any other javascript framework/library such as Angular, React, Vue etc.
