@@ -12,8 +12,5 @@ export const bubbleSort = (arr: number[]): number[] => {
         }
         if (noswaps) break;
     }
-
-    console.log('array', arr);
-
     return arr;
 };
