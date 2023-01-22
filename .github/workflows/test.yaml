@@ -1,8 +1,5 @@
 name: athro-tests
-on: 
-  pull_request:
-      paths:
-        - 'test/**'
+on: [push, pull_request]
 
 jobs:
   build:
