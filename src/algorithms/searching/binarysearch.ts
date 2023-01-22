@@ -15,5 +15,3 @@ export const binarySearch = (arr: number[], num: number): number => {
     }
     return -1;
 };
-
-console.log('Element found : ', binarySearch([1, 2, 5, 6, 8], 5));
