@@ -1,5 +1,5 @@
 name: athro-tests
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   build:
