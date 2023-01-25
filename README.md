@@ -3,9 +3,6 @@
 # Data Structures | Algorithms | Generics
 
 A library for typescript/javascript which contains basic data structures, algorithms and some generic functions.
-
-**Recent Updates:** Singly Linked List, Doubly Linked List, Queue, Stack, Binary Search Tree and Tree Traversals.
-
 ## Functionalities
 This sections explains the functionalities provided by this library. This library can be used along with any other javascript framework/library such as Angular, React, Vue etc.
 
