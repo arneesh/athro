@@ -1,13 +1,4 @@
-class Node<T> {
-    value: T;
-    left: Node<T> | null = null;
-    right: Node<T> | null = null;
-    constructor(value: T) {
-        this.value = value;
-        this.left = null;
-        this.right = null;
-    }
-}
+import { Node } from './types';
 
 export function preOrder<T>(root: Node<T>): T[] {
     if (root === null || root === undefined) return root;
