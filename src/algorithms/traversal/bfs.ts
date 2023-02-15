@@ -1,6 +1,17 @@
-export const bfs = (root: any) => {
+class Node<T> {
+    value: T;
+    left: Node<T> | null = null;
+    right: Node<T> | null = null;
+    constructor(value: T) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+export function bfs<T>(root: Node<T>) {
     if (root === null || root === undefined) return root;
-    var visited = [];
+    var visited: T[] = [];
     var queue = [];
     var node;
     queue.push(root);
@@ -14,4 +25,4 @@ export const bfs = (root: any) => {
         }
     }
     return visited;
-};
+}
