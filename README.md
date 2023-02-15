@@ -1,12 +1,14 @@
 
 
-# Data Structures | Algorithms | Generics
+# Data Structures & Algorithms
 
-A library for typescript/javascript which contains basic data structures, algorithms and some generic functions.
+A TS/JS javascript datastructures and algorithms library which is framework and environment agnostic. 
 ## Functionalities
-This sections explains the functionalities provided by this library. This library can be used along with any other javascript framework/library such as Angular, React, Vue etc.
+This sections explains the functionalities provided by this library. This library can be used along with anyjavascript/nodejs framework framework/library such as Angular, React, Vue etc.
 
-**Note:** All the imports mentioned in the sections below follow **Javascript ES6 Format**. If you want to use this library inside frameworks which still use **CommonJS** and do not support ES6 import/export you can use the library's functions in the traditional way - For Example:
+<span style="color:red">**Note:**</span> Generic will be removed from this library from version 2.0+
+
+<span style="color:blue">**Note:**</span> All the imports mentioned in the sections below follow **Javascript ES6 Format**. If you want to use this library inside frameworks which still use **CommonJS** and do not support ES6 import/export you can use the library's functions in the traditional way - For Example:
 
 ```
 var athro = require("athro");
@@ -173,7 +175,7 @@ var tree = new BinarySearchTree();
 | Methods | Usage  | Syntax  |
 | :---:   | :-: | :-: |
 | insert | Add an item to the BST | tree.insert(value) |
-| find | Find an item in the BST | tree.find(value) |
+| isPresent | Check if an item is present in the BST | tree.isPresent(value) |
 
 ---
 
@@ -211,86 +213,6 @@ Get the nodes of tree as per DFS post order format
 import { postOrder } from 'athro';
 ```
 * **Syntax** - *params: postOrder(root)*
-
-
----
-
-### Generics
-Some generic functions which are often useful while development - saves time:
-
-#### Title Case
-```
-Pass a string to convert to title case i.e "hello world  => Hello World"
-
-import { titleCase } from 'athro';
-```
-* **Syntax** - *params: titleCase(array)*
-
-#### Decimal Handler
-```
-Pass a decimal/floating point number and decimal places upto which you want to round it to
-
-import { handleDecimal } from 'athro';
-```
-* **Syntax** - *params: handleDecimal(number,decimal)*
-
-#### Beautify Date
-```
-Pass date object to convert it to -> sample : Jan 21 2020 format (Month Day Year)
-
-import { beautifyDate } from 'athro';
-```
-* **Syntax** - *params: beautifyDate(date)*
-
-#### Beautify Number
-```
-Pass number to convert to to a much more readable format -> sample : 10186438.12 gets converted to 10,186,438
-
-import { beautifyNumber } from 'athro';
-```
-* **Syntax** - *params: beautifyNumber(number)*
-
-
-#### Currency Symbol
-```
-Pass currency code to return the symbol for the currency -> sample : USD gets converted to $
-
-import { currencySymbol } from 'athro';
-```
-* **Syntax** - *params: currencySymbol(code)*
-
-#### Array Remove Duplicates
-```
-Pass an array to the function and duplicates values would be removed from the array that is returned.
-
-import { arrayRemoveDuplicates } from 'athro';
-```
-* **Syntax** - *params: arrayRemoveDuplicates(array)*
-
-#### Array Difference
-```
-Pass two arrays to the function and their difference is returned -> sample : pass ([1,2,6,9,4,3],[1,2,6,3]) returned array is [9,4].
-
-import { arrayDifference } from 'athro';
-```
-* **Syntax** - *params: arrayDifference(array1,array2)*
-
-#### Count Occurrences
-```
-Pass an array and an element to count the occurrences of that element in the array.
-
-import { countOccurrences } from 'athro';
-```
-* **Syntax** - *params: countOccurrences(array,element)*
-
-#### Bifurcate Array
-```
-Pass an array and a bifurcation function by which the array is supposed to be converted into two separate arrays.
-sample -> passing (['chair', 'chart', 'chin', 'king'], x => x[0] === 'c') returns [ ['chair', 'chart', 'chin'], ['king'] ]
-
-import { bifurcateArray } from 'athro';
-```
-* **Syntax** - *params: bifurcateArray(array,fn)*
 
 
 ## Miscellaneous
