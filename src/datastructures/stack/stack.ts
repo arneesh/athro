@@ -12,6 +12,7 @@ interface IStack<T> {
     pop(): void;
     top(): T | null;
     isEmpty(): boolean;
+    getSize(): number;
 }
 
 export class Stack<T> implements IStack<T> {
@@ -53,5 +54,9 @@ export class Stack<T> implements IStack<T> {
     isEmpty(): boolean {
         if (!this.first) return true;
         return false;
+    }
+
+    getSize(): number {
+        return this.size;
     }
 }
