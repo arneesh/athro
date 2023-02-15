@@ -18,6 +18,7 @@ interface IDoublyLinkedList<T> {
     set(index: number, value: T): Node<T> | null;
     insert(index: number, value: T): Node<T> | null;
     remove(index: number): void;
+    traverse(): unknown;
 }
 
 export class DoublyLinkedList<T> implements IDoublyLinkedList<T> {
@@ -172,5 +173,14 @@ export class DoublyLinkedList<T> implements IDoublyLinkedList<T> {
                 return;
             }
         }
+    }
+
+    traverse(): void {
+        let current = this.head;
+        while (current != null) {
+            console.log(current.value);
+            current = current.next;
+        }
+        return;
     }
 }
