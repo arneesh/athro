@@ -1,8 +1,8 @@
 export const binarySearch = (arr: number[], num: number): number => {
-    let low = 0;
-    let high = arr.length - 1;
+    let low: number = 0;
+    let high: number = arr.length - 1;
     while (low <= high) {
-        let middle = Math.floor(low + (high - low) / 2);
+        const middle = Math.floor(low + (high - low) / 2);
         if (num === arr[middle]) {
             return middle;
         }
