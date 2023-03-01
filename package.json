@@ -30,20 +30,18 @@
     "jsdoc": "^3.6.10",
     "lint-staged": "^12.3.3",
     "prettier": "^2.5.1",
+    "simple-git-hooks": "^2.8.1",
     "ts-node": "10.4.0",
     "tsup": "^6.6.3",
     "typescript": "4.5.5",
     "vitest": "^0.29.2"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*.{js,ts}": [
-      "eslint --fix",
-      "git add"
+      "eslint --cache --fix"
     ]
   },
   "keywords": [

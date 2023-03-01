@@ -1,5 +1,5 @@
 export const bubbleSort = (arr: number[]): number[] => {
-    let noswaps;
+    let noswaps: boolean;
     for (let i = arr.length; i > 0; i--) {
         noswaps = true;
         for (let j = 0; j < i - 1; j++) {

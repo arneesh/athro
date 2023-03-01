@@ -13,6 +13,7 @@ specifiers:
   jsdoc: ^3.6.10
   lint-staged: ^12.3.3
   prettier: ^2.5.1
+  simple-git-hooks: ^2.8.1
   ts-node: 10.4.0
   tsup: ^6.6.3
   typescript: 4.5.5
@@ -31,6 +32,7 @@ devDependencies:
   jsdoc: 3.6.11
   lint-staged: 12.5.0
   prettier: 2.8.4
+  simple-git-hooks: 2.8.1
   ts-node: 10.4.0_247b6ed5e900a7cb1f087e65be0c3da9
   tsup: 6.6.3_ts-node@10.4.0+typescript@4.5.5
   typescript: 4.5.5
@@ -3730,6 +3732,12 @@ packages:
 
   /signal-exit/3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
+    dev: true
+
+  /simple-git-hooks/2.8.1:
+    resolution: {integrity: sha512-DYpcVR1AGtSfFUNzlBdHrQGPsOhuuEJ/FkmPOOlFysP60AHd3nsEpkGq/QEOdtUyT1Qhk7w9oLmFoMG+75BDog==}
+    hasBin: true
+    requiresBuild: true
     dev: true
 
   /slash/3.0.0:
