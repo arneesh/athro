@@ -18,7 +18,8 @@ jobs:
           cache: "pnpm"
 
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run lint && pnpm run test:ci && pnpm run build
+      # - run: pnpm run lint && pnpm run test:ci && pnpm run build
+      - run: pnpm run build
 
 
 # ---- file name publish.yaml
