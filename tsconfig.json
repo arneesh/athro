@@ -20,6 +20,8 @@
           "src/types/*"
         ]
       },
-      "typeRoots": ["./@types", "./node_modules/@types"]
+      "typeRoots": ["./@types", "./node_modules/@types"],
+      "noUncheckedIndexedAccess": true,
+      "noEmit": true
     }
   }
