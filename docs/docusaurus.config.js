@@ -66,8 +66,8 @@ const config = {
       navbar: {
         title: 'athro',
         logo: {
-          alt: 'athro Logo',
-          src: 'img/logo.svg',
+          // alt: 'athro Logo',
+          src: 'img/logo1.svg',
         },
         items: [
           // {
@@ -101,7 +101,7 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/getathro',
               },
             ],
           },
@@ -110,7 +110,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/arneesh/athro',
               },
             ],
           },
