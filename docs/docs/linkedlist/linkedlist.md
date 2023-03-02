@@ -8,7 +8,7 @@ Create a singly **Linked List**.
 
 ## Usage
 
-```tsx title="src/sample/linedlist.ts"
+```tsx title="src/sample/linkedlist.ts"
 import { linkedList } from 'athro';
 
 let list = new linkedList();

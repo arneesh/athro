@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Doubly - Linked List
 
-Create a doubly **Doubly Linked List**.
+Create a **Doubly Linked List**.
 
 
 ## Usage
