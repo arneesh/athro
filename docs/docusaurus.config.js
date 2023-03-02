@@ -83,6 +83,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://www.npmjs.com/package/athro',
+            label: 'NPM',
+            position: 'right',
+          },
         ],
       },
       footer: {
