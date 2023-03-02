@@ -1,0 +1,82 @@
+{
+  "name": "athro",
+  "author": "arneeshaima",
+  "version": "1.5.4",
+  "description": "A library for TS/JS which contains datastructures and algorithms",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev-history": "ts-node src/index.ts",
+    "test:ci": "vitest run",
+    "test": "vitest run",
+    "test-with-coverage": "vitest run --coverage",
+    "lint-eslint": "eslint --fix",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@types/node": "16.11.22",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint": "^8.8.0",
+    "eslint-config-next": "^12.0.10",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^12.3.3",
+    "prettier": "^2.5.1",
+    "ts-node": "10.4.0",
+    "tsup": "^6.6.3",
+    "typescript": "4.5.5",
+    "vitest": "^0.29.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --cache --fix"
+    ]
+  },
+  "keywords": [
+    "data structures",
+    "algorithms",
+    "generics",
+    "stack",
+    "queue",
+    "linked list",
+    "doubly linked list",
+    "trees",
+    "binary search tree",
+    "bst",
+    "tree traversal",
+    "inorder",
+    "preorder",
+    "postorder",
+    "breadth first search",
+    "depth first search",
+    "front-end",
+    "backend",
+    "searching",
+    "sorting",
+    "graphs",
+    "trees",
+    "reactjs",
+    "vuejs",
+    "javascript",
+    "nodejs",
+    "angular",
+    "expressjs",
+    "ember.js",
+    "meteor",
+    "mithril",
+    "backbone.js",
+    "polymer",
+    "svelte"
+  ]
+}
