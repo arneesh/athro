@@ -9,9 +9,9 @@ Create a singly **Linked List**.
 ## Usage
 
 ```tsx title="src/sample/linkedlist.ts"
-import { linkedList } from 'athro';
+import { LinkedList } from 'athro';
 
-let list = new linkedList();
+let list = new LinkedList();
 ```
 
 ## Available Methods

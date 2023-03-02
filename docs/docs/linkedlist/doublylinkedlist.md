@@ -10,9 +10,9 @@ Create a **Doubly Linked List**.
 ## Usage
 
 ```tsx title="src/sample/linedlist.ts"
-import { doublyLinkedList } from 'athro';
+import { DoublyLinkedList } from 'athro';
 
-let list = new doublyLinkedList();
+let list = new DoublyLinkedList();
 ```
 
 ## Available Methods
