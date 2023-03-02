@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "docs",
+    "docs/",
     "packages/*"
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --filter=docs",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },

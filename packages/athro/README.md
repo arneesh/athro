@@ -43,7 +43,7 @@ Sorting functionalities inbuilt in this library are:
 
 #### Bubble Sort
 ```
-Pass the array of numbers/strings which needs to be sorted
+Pass the array of numbers which needs to be sorted
 
 import { bubbleSort } from 'athro';
 ```
