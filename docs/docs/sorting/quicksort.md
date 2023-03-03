@@ -17,4 +17,13 @@ const arr = [2, 6, 3, 8];
 const result = quickSort(arr)
 ```
 
+## Time Complexity
+The time complexity of **Quick Sort** is:
+
+
+| Case | Time Complexity  | Description |
+| :---:   | :-: | :-: |
+| Best | O(nlogn) | O(logn) decompositions and O(n) comparisons per decomposition  |
+| Average | O(nlogn) | O(logn) decompositions and O(n) comparisons per decomposition |
+| Worst | O(n<sup>2</sup>) | O(n) decompositions and O(n) comparisons per decomposition |
 

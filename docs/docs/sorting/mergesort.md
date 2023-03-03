@@ -23,7 +23,7 @@ The time complexity of **Merge Sort** is:
 
 | Case | Time Complexity  | Description |
 | :---:   | :-: | :-: |
-| Best | O(nlogn) | O(logn) splits and O(n) comparisons per decomposition  |
-| Average | O(nlogn) | O(logn) splits and O(n) comparisons per decomposition |
-| Worst | O(nlogn) | O(logn) splits and O(n) comparisons per decomposition |
+| Best | O(nlogn) | O(logn) decompositions and O(n) comparisons per decomposition  |
+| Average | O(nlogn) | O(logn) decompositions and O(n) comparisons per decomposition |
+| Worst | O(nlogn) | O(logn) decompositions and O(n) comparisons per decomposition |
 
