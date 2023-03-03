@@ -9,7 +9,10 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --filter=docs",
+    "dev:docs": "turbo run dev --filter=docs",
+    "dev:athro": "turbo run dev --filter=docs",
+    "dev": "turbo run dev",
+    "test": "turbo run test --filter=athro",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },

@@ -2,8 +2,8 @@ name: CI
 on:
   push:
     branches:
-      # - "**"
-      - "main"
+      - "**"
+      # - "main"
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
       # - run: pnpm run lint && pnpm run test:ci && pnpm run build
-      - run: pnpm run build
+      - run: pnpm run test:ci && pnpm run build
 
 
 # ---- file name publish.yaml
