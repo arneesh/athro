@@ -17,4 +17,12 @@ const arr = [2, 6, 3, 8];
 const result = selectionSort(arr)
 ```
 
+## Time Complexity
+The time complexity of **Selection Sort** is:
 
+
+| Case | Time Complexity  | Description |
+| :---:   | :-: | :-: |
+| Best | O(n<sup>2</sup>) | n comparisons for n items |
+| Average | O(n<sup>2</sup>) | n comparisons for n items |
+| Worst | O(n<sup>2</sup>) | n comparisons for n items |
