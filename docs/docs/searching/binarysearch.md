@@ -24,3 +24,12 @@ Make sure the array passed is sorted. Binary Search algorithm only works on sort
 
 :::
 
+## Time Complexity
+The time complexity of **Binary Search** is:
+
+
+| Case | Time Complexity  | Description |
+| :---:   | :-: | :-: |
+| Best | O(1) | When the element is found at the middle index |
+| Average | O(log(n)) | When the elment is found at any index besides middle |
+| Worst | O(log(n)) | When the elment is found at any index besides middle |
