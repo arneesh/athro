@@ -7,5 +7,5 @@ athro
 <p>
 
 <p align="center">
- <a href="https://athro.arneeshaima.com">Documentation</a> | <a href="https://athro.arneeshaima.com/Getting%20Started">Getting Started</a> | <a href="https://www.npmjs.com/package/athro">NPM</a>
+ <a href="https://athro.arneeshaima.com" target="_blank">Documentation</a> | <a href="https://athro.arneeshaima.com/Getting%20Started" target="_blank">Getting Started</a> | <a href="https://www.npmjs.com/package/athro" target="_blank">NPM</a>
 </p>
