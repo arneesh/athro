@@ -2,7 +2,7 @@
   "name": "athro",
   "author": "arneeshaima",
   "version": "1.5.4",
-  "description": "A library for TS/JS which contains datastructures and algorithms",
+  "description": "A datastructures and algorithms library for TS/JS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
