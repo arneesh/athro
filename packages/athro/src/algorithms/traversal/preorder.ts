@@ -1,6 +1,6 @@
 import { Node } from './types';
 
-export function preOrder<T>(root: Node<T>): T[] {
+export function preOrder<T>(root: Node<T> | null): T[] | null {
     if (root === null || root === undefined) return root;
     let visited: T[] = [];
     let current = root;

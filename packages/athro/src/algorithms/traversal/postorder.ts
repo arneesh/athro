@@ -1,6 +1,6 @@
 import { Node } from './types';
 
-export function postOrder<T>(root: Node<T>): T[] {
+export function postOrder<T>(root: Node<T> | null): T[] | null {
     if (root === null || root === undefined) return root;
     var visited: T[] = [];
     var current = root;
