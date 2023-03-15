@@ -14,15 +14,18 @@
     "dev": "turbo run dev",
     "test": "turbo run test --filter=athro",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "publish-packages": "turbo run build test && changeset version && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.0",
     "prettier": "latest",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "packageManager": "pnpm@6.11.0"
+  "packageManager": "pnpm@6.11.0",
+  "dependencies": {
+    "@changesets/cli": "^2.26.0"
+  }
 }
