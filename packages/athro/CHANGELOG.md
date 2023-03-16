@@ -1,5 +1,11 @@
 # athro
 
+## 2.0.2
+
+### Patch Changes
+
+- updated readme and license
+
 ## 2.0.1
 
 ### Patch Changes
