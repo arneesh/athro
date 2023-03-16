@@ -1,5 +1,11 @@
 # athro
 
+## 2.0.3
+
+### Patch Changes
+
+- updated root and packages/athro readme
+
 ## 2.0.2
 
 ### Patch Changes
