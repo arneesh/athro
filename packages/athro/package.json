@@ -1,7 +1,7 @@
 {
   "name": "athro",
   "author": "arneeshaima",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A datastructures and algorithms library for TS/JS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

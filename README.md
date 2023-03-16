@@ -12,6 +12,8 @@ athro
 	<a href="https://github.com/arneesh/athro/actions"><img src="https://github.com/arneesh/athro/workflows/CI/badge.svg?branch=master" alt="Build status"></a>
     <a href="https://img.shields.io/npm/v/athro"><img src="https://img.shields.io/npm/v/athro" alt="Version"></a>
 	<a href="https://packagephobia.now.sh/result?p=athro"><img src="https://badgen.net/packagephobia/install/athro" alt="Install Size"></a>
+	<a href="https://github.com/arneesh/athro/blob/master/LICENSE.md">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="athro is released under the MIT license." /></a>
 </div>
 
 <br/>
