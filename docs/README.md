@@ -9,4 +9,4 @@ The documentation workspace for <a href="https://www.npmjs.com/package/athro" ta
 ### Links
 - Visit the project on **[npm](https://www.npmjs.com/package/athro)** 
 - Visit the project on **[github](https://github.com/arneesh/athro)** 
-- Visit the project's site **[athro](https://athro.arneeshaima.com/)** 
+- Visit the project's site **[athro](https://athro-docs-8q18tydzc-arneesh.vercel.app)** 
