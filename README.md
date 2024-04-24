@@ -19,7 +19,7 @@ athro
 <br/>
 
 <p align="center">
- <a href="https://athro.arneeshaima.com" target="_blank">Documentation</a> | <a href="https://athro.arneeshaima.com/Getting%20Started" target="_blank">Getting Started</a> | <a href="https://www.npmjs.com/package/athro" target="_blank">NPM</a>
+ <a href="https://athro-docs-8q18tydzc-arneesh.vercel.app" target="_blank">Documentation</a> | <a href="https://athro-docs-8q18tydzc-arneesh.vercel.app/Getting%20Started" target="_blank">Getting Started</a> | <a href="https://www.npmjs.com/package/athro" target="_blank">NPM</a>
 </p>
 
 
