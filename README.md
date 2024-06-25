@@ -45,7 +45,7 @@ pnpm add athro
 
 ## Documentation
 
-Visit the official <a href="https://athro.arneeshaima.com" target="_blank">Documentation</a>
+Visit the official <a href="https://athro-docs.vercel.app/Getting%20Started" target="_blank">Documentation</a>
 
 
 ## License
