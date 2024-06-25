@@ -19,7 +19,7 @@ athro
 <br/>
 
 <p align="center">
- <a href="https://athro-docs.vercel.app" target="_blank">Documentation</a> | <a href="https://athro-docs.vercel.app/Getting%20Started" target="_blank">Getting Started</a> | <a href="https://www.npmjs.com/package/athro" target="_blank">NPM</a>
+ <a href="https://athro-docs.vercel.app" target="_blank">Documentation</a> | <a href="https://athro-docs.vercel.app" target="_blank">Getting Started</a> | <a href="https://www.npmjs.com/package/athro" target="_blank">NPM</a>
 </p>
 
 
@@ -45,7 +45,7 @@ pnpm add athro
 
 ## Documentation
 
-Visit the official <a href="https://athro-docs.vercel.app/Getting%20Started" target="_blank">Documentation</a>
+Visit the official <a href="https://athro-docs.vercel.app" target="_blank">Documentation</a>
 
 
 ## License
