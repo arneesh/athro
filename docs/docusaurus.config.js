@@ -1,50 +1,49 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'athro',
-  tagline: 'athro opensource',
+  title: "athro",
+  tagline: "athro opensource",
   // favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://athro.arneeshaima.com',
+  url: "https://athro-docs.vercel.app",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'athro', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "athro", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/arneesh/athro/tree/master/docs',
-            // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: "https://github.com/arneesh/athro/tree/master/docs",
+          // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false,
         // blog: {
@@ -53,7 +52,7 @@ const config = {
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -65,10 +64,10 @@ const config = {
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'athro',
+        title: "athro",
         logo: {
           // alt: 'athro Logo',
-          src: 'img/logo1.svg',
+          src: "img/logo1.svg",
         },
         items: [
           // {
@@ -79,44 +78,44 @@ const config = {
           // },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/arneesh/athro',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/arneesh/athro",
+            label: "GitHub",
+            position: "right",
           },
           {
-            href: 'https://www.npmjs.com/package/athro',
-            label: 'NPM',
-            position: 'right',
+            href: "https://www.npmjs.com/package/athro",
+            label: "NPM",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Introduction',
-                to: '/',
+                label: "Introduction",
+                to: "/",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/getathro',
+                label: "Twitter",
+                href: "https://twitter.com/getathro",
               },
             ],
           },
           {
-            title: 'Contributing',
+            title: "Contributing",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/arneesh/athro',
+                label: "GitHub",
+                href: "https://github.com/arneesh/athro",
               },
             ],
           },
@@ -125,11 +124,11 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme
+        darkTheme: darkCodeTheme,
       },
       colorMode: {
-        defaultMode: 'dark'
-      }
+        defaultMode: "dark",
+      },
     }),
 };
 

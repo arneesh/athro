@@ -1,4 +1,3 @@
-
 <h1 align="center">
 athro
 </h1>
@@ -6,7 +5,6 @@ athro
 <p align="center">
 <b>athro</b> is an opensource datastructures and algorithms library for the JS/TS ecosystem.
 <p>
-
 
 <div align="center">
 	<a href="https://github.com/arneesh/athro/actions"><img src="https://github.com/arneesh/athro/workflows/CI/badge.svg?branch=master" alt="Build Status"></a>
@@ -19,26 +17,27 @@ athro
 <br/>
 
 <p align="center">
- <a href="https://athro.arneeshaima.com" target="_blank">Documentation</a> | <a href="https://athro-docs.vercel.app/Getting%20Started" target="_blank">Getting Started</a> | <a href="https://www.npmjs.com/package/athro" target="_blank">NPM</a>
+ <a href="https://athro-docs.vercel.app" target="_blank">Documentation</a> | <a href="https://athro-docs.vercel.app/Getting%20Started" target="_blank">Getting Started</a> | <a href="https://www.npmjs.com/package/athro" target="_blank">NPM</a>
 </p>
-
-
 
 ## Installation
 
-Add **athro** to your project using one of the following commands. 
+Add **athro** to your project using one of the following commands.
 
 **With npm**
+
 ```bash
 npm install athro
 ```
 
 **or With yarn**
+
 ```bash
 yarn add athro
 ```
 
 **or With pnpm**
+
 ```bash
 pnpm add athro
 ```
@@ -46,7 +45,6 @@ pnpm add athro
 ## Documentation
 
 Visit the official <a href="https://athro-docs.vercel.app" target="_blank">Documentation</a>
-
 
 ## License
 
