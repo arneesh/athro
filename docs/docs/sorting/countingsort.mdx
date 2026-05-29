@@ -1,0 +1,36 @@
+---
+sidebar_position: 7
+---
+
+import SortingVisualizer from '@site/src/components/visualizers/SortingVisualizer';
+
+# Counting Sort
+
+A non-comparison sort that counts occurrences of each value and reconstructs the array in order.
+
+## Interactive Visualization
+
+<SortingVisualizer algorithm="counting" defaultArray={[4, 2, 2, 8, 3, 3, 1]} />
+
+## Usage
+
+```tsx
+import { countingSort } from 'athro';
+
+const arr = [4, 2, 2, 8, 3, 3, 1];
+countingSort(arr);
+```
+
+:::info Note
+
+Works best when the range of input values is small relative to array length.
+
+:::
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(n + k) | k is the value range |
+| Average | O(n + k) | Linear scan of counts |
+| Worst | O(n + k) | Same regardless of input order |

@@ -1,0 +1,30 @@
+---
+sidebar_position: 3
+---
+
+import SearchVisualizer from '@site/src/components/visualizers/SearchVisualizer';
+
+# Jump Search
+
+Jumps ahead in fixed-size blocks on a sorted array, then performs a linear scan within the block.
+
+## Interactive Visualization
+
+<SearchVisualizer mode="binary" defaultArray={[1, 2, 5, 6, 8, 12, 18, 24, 30]} defaultTarget={18} />
+
+## Usage
+
+```tsx
+import { jumpSearch } from 'athro';
+
+const arr = [1, 2, 5, 6, 8, 12, 18, 24];
+const index = jumpSearch(arr, 18);
+```
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(1) | Target at first block |
+| Average | O(√n) | Block jump + linear scan |
+| Worst | O(√n) | Target in last block |

@@ -1,133 +1,101 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require('prism-react-renderer/themes/nightOwlLight');
+const darkCodeTheme = require('prism-react-renderer/themes/nightOwl');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "athro",
-  tagline: "athro opensource",
-  // favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: "https://athro-docs.vercel.app",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "athro", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
-
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  title: 'Athro',
+  tagline: 'Algorithms & data structures with interactive visualizations',
+  url: 'https://athro-docs.vercel.app',
+  baseUrl: '/',
+  organizationName: 'arneesh',
+  projectName: 'athro',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
-
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/arneesh/athro/tree/master/docs",
-          // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/',
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: 'https://github.com/arneesh/athro/tree/master/docs',
         },
         blog: false,
-        // blog: {
-        //   showReadingTime: true,
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/visualizers.css')],
         },
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      // image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: "athro",
-        logo: {
-          // alt: 'athro Logo',
-          src: "img/logo1.svg",
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
         },
+      },
+      navbar: {
+        title: 'Athro',
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-          // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: "https://github.com/arneesh/athro",
-            label: "GitHub",
-            position: "right",
+            type: 'docSidebar',
+            sidebarId: 'athroSidebar',
+            position: 'left',
+            label: 'Docs',
           },
           {
-            href: "https://www.npmjs.com/package/athro",
-            label: "NPM",
-            position: "right",
+            href: 'https://github.com/arneesh/athro',
+            label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://www.npmjs.com/package/athro',
+            label: 'npm',
+            position: 'right',
+            className: 'navbar-npm-link',
           },
         ],
       },
       footer: {
-        style: "dark",
+        style: 'dark',
         links: [
           {
-            title: "Docs",
+            title: 'Documentation',
             items: [
-              {
-                label: "Introduction",
-                to: "/",
-              },
+              { label: 'Introduction', to: '/' },
+              { label: 'Getting Started', to: '/Getting%20Started' },
+              { label: 'Sorting', to: '/category/sorting' },
+              { label: 'Graphs', to: '/category/graphs' },
             ],
           },
           {
-            title: "Community",
+            title: 'Resources',
             items: [
-              {
-                label: "Twitter",
-                href: "https://twitter.com/getathro",
-              },
-            ],
-          },
-          {
-            title: "Contributing",
-            items: [
-              {
-                label: "GitHub",
-                href: "https://github.com/arneesh/athro",
-              },
+              { label: 'npm', href: 'https://www.npmjs.com/package/athro' },
+              { label: 'GitHub', href: 'https://github.com/arneesh/athro' },
+              { label: 'Twitter', href: 'https://twitter.com/getathro' },
             ],
           },
         ],
-        copyright: `MIT Licensed Copyright © ${new Date().getFullYear()} Arneesh Aima`,
+        copyright: `MIT © ${new Date().getFullYear()} Arneesh Aima`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['bash', 'tsx', 'typescript'],
       },
       colorMode: {
-        defaultMode: "dark",
+        defaultMode: 'dark',
+        respectPrefersColorScheme: true,
       },
     }),
 };

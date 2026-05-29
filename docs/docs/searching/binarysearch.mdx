@@ -1,0 +1,38 @@
+---
+sidebar_position: 2
+---
+
+import SearchVisualizer from '@site/src/components/visualizers/SearchVisualizer';
+
+# Binary Search
+
+Efficiently finds a target in a **sorted** array by repeatedly halving the search range.
+
+## Interactive Visualization
+
+<SearchVisualizer mode="binary" defaultArray={[2, 4, 6, 8, 10, 12]} defaultTarget={8} />
+
+## Usage
+
+```tsx title="src/sample/binarysearch.ts"
+import { binarySearch } from 'athro';
+
+const arr = [2, 4, 6, 8];
+const target = 6;
+
+const result = binarySearch(arr, target);
+```
+
+:::danger Caution
+
+The array must be sorted. Binary search only works on sorted arrays.
+
+:::
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(1) | Target found at the middle index |
+| Average | O(log n) | Target found after halving the range |
+| Worst | O(log n) | Target at an edge or not present |

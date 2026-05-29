@@ -1,51 +1,95 @@
-<h1 align="center">
-athro
-</h1>
+# Athro
 
-<p align="center">
-<b>athro</b> is an opensource datastructures and algorithms library for the JS/TS ecosystem.
-<p>
+Algorithms and data structures for TypeScript and JavaScript, with interactive documentation for every algorithm.
 
 <div align="center">
-	<a href="https://github.com/arneesh/athro/actions"><img src="https://github.com/arneesh/athro/workflows/CI/badge.svg?branch=master" alt="Build Status"></a>
-    <a href="https://img.shields.io/npm/v/athro"><img src="https://img.shields.io/npm/v/athro" alt="Version"></a>
-	<a href="https://packagephobia.now.sh/result?p=athro"><img src="https://badgen.net/packagephobia/install/athro" alt="Install Size"></a>
-	<a href="https://github.com/arneesh/athro/blob/master/LICENSE.md">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="athro is released under the MIT license." /></a>
+
+[![npm version](https://img.shields.io/npm/v/athro.svg)](https://www.npmjs.com/package/athro)
+[![CI](https://github.com/arneesh/athro/actions/workflows/main.yaml/badge.svg?branch=master)](https://github.com/arneesh/athro/actions/workflows/main.yaml)
+[![license](https://img.shields.io/npm/l/athro.svg)](https://github.com/arneesh/athro/blob/master/LICENSE)
+
+[Documentation](https://athro-docs.vercel.app) · [Getting Started](https://athro-docs.vercel.app/Getting%20Started) · [npm](https://www.npmjs.com/package/athro) · [Issues](https://github.com/arneesh/athro/issues)
+
 </div>
 
-<br/>
+---
 
-<p align="center">
- <a href="https://athro-docs.vercel.app" target="_blank">Documentation</a> | <a href="https://athro-docs.vercel.app/Getting%20Started" target="_blank">Getting Started</a> | <a href="https://www.npmjs.com/package/athro" target="_blank">NPM</a>
-</p>
+## Overview
 
-## Installation
+Athro is a typed library of classic algorithms and data structures. It ships dual **CommonJS** and **ESM** builds with TypeScript declarations, and works in Node.js, Bun, Deno, and modern browsers.
 
-Add **athro** to your project using one of the following commands.
+Each algorithm in the [documentation](https://athro-docs.vercel.app) includes an interactive step-by-step visualization.
 
-**With npm**
+## Install
 
 ```bash
 npm install athro
 ```
 
-**or With yarn**
+```bash
+pnpm add athro
+```
 
 ```bash
 yarn add athro
 ```
 
-**or With pnpm**
+## Quick example
 
-```bash
-pnpm add athro
+```tsx
+import { heapSort, Graph, graphBfs, dijkstra, HashMap, BinarySearchTree, bubbleSort } from 'athro';
+
+// Sorting
+bubbleSort([8, 3, 6, 2]);
+heapSort([8, 3, 6, 1]);
+
+// Hash map
+const map = new HashMap<string, number>();
+map.set('key', 42);
+map.get('key'); // 42
+
+// Graph
+const graph = new Graph<string>(true);
+graph.addEdge('A', 'B', 4);
+graph.addEdge('B', 'C', 2);
+
+graphBfs(graph, 'A');
+dijkstra(graph, 'A', 'C');
+
+// Binary search tree
+const bst = new BinarySearchTree<number>();
+bst.insert(10);
+bst.isPresent(10); // true
 ```
 
-## Documentation
+## Usage
 
-Visit the official <a href="https://athro-docs.vercel.app" target="_blank">Documentation</a>
+Import named exports from the package entry point:
+
+```tsx
+import { mergeSort, Stack, Queue } from 'athro';
+
+const stack = new Stack<number>();
+stack.push(1);
+stack.push(2);
+stack.pop();
+
+mergeSort([4, 2, 7, 1, 3]);
+```
+
+Browse the full API with examples and visualizations in the [documentation](https://athro-docs.vercel.app).
+
+## Compatibility
+
+| Environment    | Supported |
+| -------------- | --------- |
+| Node.js        | Yes       |
+| Bun            | Yes       |
+| Deno           | Yes       |
+| Browsers (ESM) | Yes       |
+
+Requires a JavaScript runtime with ES2017 support.
 
 ## License
 
-[MIT](./LICENSE) License © 2020-Present [Arneesh Aima](https://github.com/arneesh)
+[MIT](./LICENSE) © [Arneesh Aima](https://github.com/arneesh)

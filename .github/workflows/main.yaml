@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - "**"
-      # - "main"
 
 jobs:
   build:
@@ -15,9 +14,10 @@ jobs:
           version: 7
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 18.x
           cache: "pnpm"
 
       - run: pnpm install --frozen-lockfile
-      # - run: pnpm run lint && pnpm run test:ci && pnpm run build
-      - run: pnpm run test && pnpm run build
+      - run: pnpm run lint
+      - run: pnpm run test
+      - run: pnpm run build

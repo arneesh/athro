@@ -1,0 +1,30 @@
+---
+sidebar_position: 3
+---
+
+import SortingVisualizer from '@site/src/components/visualizers/SortingVisualizer';
+
+# Selection Sort
+
+Repeatedly finds the minimum element from the unsorted portion and places it at the beginning.
+
+## Interactive Visualization
+
+<SortingVisualizer algorithm="selection" defaultArray={[8, 3, 6, 2, 9, 1]} />
+
+## Usage
+
+```tsx title="src/sample/selectionsort.ts"
+import { selectionSort } from 'athro';
+
+const arr = [2, 6, 3, 8];
+const result = selectionSort(arr);
+```
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(n²) | Always scans the unsorted region |
+| Average | O(n²) | Linear scan for each position |
+| Worst | O(n²) | Same number of comparisons regardless of input |

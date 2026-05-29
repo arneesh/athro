@@ -10,7 +10,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev:docs": "turbo run dev --filter=docs",
-    "dev:athro": "turbo run dev --filter=docs",
+    "dev:athro": "turbo run dev --filter=athro",
     "dev": "turbo run dev",
     "test": "turbo run test --filter=athro",
     "lint": "turbo run lint",

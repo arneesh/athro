@@ -1,0 +1,30 @@
+---
+sidebar_position: 2
+---
+
+import GraphVisualizer from '@site/src/components/visualizers/GraphVisualizer';
+
+# Graph BFS
+
+Breadth-first traversal of a graph, visiting all reachable nodes level by level.
+
+## Interactive Visualization
+
+<GraphVisualizer mode="bfs" />
+
+## Usage
+
+```tsx
+import { Graph, graphBfs } from 'athro';
+
+const graph = new Graph<string>();
+graph.addEdge('A', 'B');
+graph.addEdge('A', 'C');
+graph.addEdge('B', 'D');
+
+graphBfs(graph, 'A'); // ['A', 'B', 'C', 'D']
+```
+
+## Time Complexity
+
+O(V + E) where V is vertices and E is edges.

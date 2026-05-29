@@ -1,0 +1,32 @@
+---
+sidebar_position: 1
+---
+
+import SearchVisualizer from '@site/src/components/visualizers/SearchVisualizer';
+
+# Linear Search
+
+Sequentially checks each element in the array until the target is found or the array ends.
+
+## Interactive Visualization
+
+<SearchVisualizer mode="linear" defaultArray={[4, 2, 8, 6, 10, 3]} defaultTarget={8} />
+
+## Usage
+
+```tsx title="src/sample/linearsearch.ts"
+import { linearSearch } from 'athro';
+
+const arr = [2, 6, 3, 8];
+const target = 6;
+
+const result = linearSearch(arr, target);
+```
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(1) | Target found at the first index |
+| Average | O(n) | Target found somewhere in the middle |
+| Worst | O(n) | Target at the last index or not present |

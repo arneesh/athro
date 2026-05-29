@@ -1,0 +1,30 @@
+---
+sidebar_position: 6
+---
+
+import SortingVisualizer from '@site/src/components/visualizers/SortingVisualizer';
+
+# Heap Sort
+
+Builds a max heap from the array, then repeatedly extracts the maximum element to the end.
+
+## Interactive Visualization
+
+<SortingVisualizer algorithm="heap" defaultArray={[8, 3, 6, 2, 9, 1]} />
+
+## Usage
+
+```tsx
+import { heapSort } from 'athro';
+
+const arr = [8, 3, 6, 2, 9, 1];
+heapSort(arr);
+```
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(n log n) | Heap construction and extraction |
+| Average | O(n log n) | Consistent heap operations |
+| Worst | O(n log n) | Same structure regardless of input |

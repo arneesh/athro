@@ -1,0 +1,31 @@
+---
+sidebar_position: 1
+---
+
+# Graph
+
+An adjacency-list graph supporting directed and undirected edges with optional weights.
+
+## Usage
+
+```tsx
+import { Graph } from 'athro';
+
+const graph = new Graph<string>(true);
+graph.addVertex('A');
+graph.addEdge('A', 'B', 4);
+graph.addEdge('B', 'C', 2);
+
+graph.getNeighbors('A'); // [{ node: 'B', weight: 4 }]
+graph.getVertices();     // ['A', 'B', 'C']
+```
+
+## Available Methods
+
+| Method | Description |
+| :--- | :--- |
+| `addVertex(v)` | Add a vertex to the graph |
+| `addEdge(from, to, weight?)` | Connect two vertices |
+| `getNeighbors(v)` | Get adjacent edges |
+| `getVertices()` | List all vertices |
+| `isDirected()` | Whether the graph is directed |

@@ -1,0 +1,22 @@
+---
+sidebar_position: 1
+---
+
+import TreeVisualizer from '@site/src/components/visualizers/TreeVisualizer';
+
+# Breadth First Search
+
+Traverses a tree level by level using a queue.
+
+## Interactive Visualization
+
+<TreeVisualizer mode="bfs" />
+
+## Usage
+
+```tsx title="src/sample/bfs.ts"
+import { bfs, Node } from 'athro';
+
+const root = new Node(3);
+const result = bfs(root);
+```

@@ -1,0 +1,32 @@
+---
+sidebar_position: 4
+---
+
+import GraphVisualizer from '@site/src/components/visualizers/GraphVisualizer';
+
+# Dijkstra's Algorithm
+
+Finds the shortest path from a source vertex to a target in a weighted directed graph with non-negative edges.
+
+## Interactive Visualization
+
+<GraphVisualizer mode="dijkstra" />
+
+## Usage
+
+```tsx
+import { Graph, dijkstra } from 'athro';
+
+const graph = new Graph<string>(true);
+graph.addEdge('A', 'B', 4);
+graph.addEdge('A', 'C', 2);
+graph.addEdge('B', 'D', 5);
+graph.addEdge('C', 'D', 8);
+
+const { path, distances } = dijkstra(graph, 'A', 'D');
+// path: ['A', 'B', 'D'], distances.get('D') === 9
+```
+
+## Time Complexity
+
+O(V²) with the current adjacency-list implementation, where V is the number of vertices.

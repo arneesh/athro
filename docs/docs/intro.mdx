@@ -1,0 +1,48 @@
+---
+sidebar_position: 1
+slug: /
+---
+
+import Hero from '@site/src/components/Hero';
+import DocCard from '@site/src/components/DocCard';
+
+<Hero />
+
+<div className="section-label">Explore</div>
+
+<div className="doc-cards">
+  <DocCard title="Sorting" description="Bubble, merge, quick, heap, counting, and radix sort with live bar-chart visualizations." to="/category/sorting" badge="8 algorithms" />
+  <DocCard title="Searching" description="Linear, binary, jump, and exponential search with step-by-step index highlighting." to="/category/searching" badge="4 algorithms" />
+  <DocCard title="Graphs" description="BFS, DFS, Dijkstra's shortest path, and topological sort on weighted graphs." to="/category/graphs" badge="New" />
+  <DocCard title="Data Structures" description="Linked lists, stack, queue, heap, hash map, BST, and graph adjacency lists." to="/category/linked-lists" badge="7 structures" />
+</div>
+
+## Install
+
+```bash
+npm install athro
+```
+
+## Quick example
+
+```tsx
+import { heapSort, Graph, graphBfs, dijkstra, HashMap } from 'athro';
+
+heapSort([8, 3, 6, 1]);
+
+const map = new HashMap<string, number>();
+map.set('key', 42);
+
+const graph = new Graph<string>(true);
+graph.addEdge('A', 'B', 4);
+graphBfs(graph, 'A');
+dijkstra(graph, 'A', 'B');
+```
+
+## Why Athro?
+
+Every algorithm page includes an **interactive visualization** — play, pause, and step through each operation before using it in production code. The library ships dual **CJS + ESM** builds with full TypeScript declarations.
+
+## Compatibility
+
+Works everywhere JavaScript runs — Node.js, Deno, Bun, and modern browsers.

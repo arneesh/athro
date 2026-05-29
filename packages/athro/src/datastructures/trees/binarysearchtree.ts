@@ -1,7 +1,8 @@
-class Node<T> {
+export class BSTNode<T> {
     value: T;
-    left: Node<T> | null = null;
-    right: Node<T> | null = null;
+    left: BSTNode<T> | null = null;
+    right: BSTNode<T> | null = null;
+
     constructor(value: T) {
         this.value = value;
         this.left = null;
@@ -10,61 +11,52 @@ class Node<T> {
 }
 
 interface IBinarySearchTree<T> {
-    insert(value: T): Node<T> | null;
+    insert(value: T): BSTNode<T> | null;
     isPresent(value: T): boolean;
+    getRoot(): BSTNode<T> | null;
 }
 
 export class BinarySearchTree<T> implements IBinarySearchTree<T> {
-    private root: Node<T> | null = null;
+    private root: BSTNode<T> | null = null;
 
-    insert(value: T): Node<T> | null {
-        let newNode = new Node(value);
+    insert(value: T): BSTNode<T> | null {
+        const newNode = new BSTNode(value);
         if (this.root == null) {
             this.root = newNode;
             return newNode;
-        } else {
-            let current = this.root;
-            while (true) {
-                if (value === current.value) return null;
-                if (value < current.value) {
-                    if (current.left == null) {
-                        current.left = newNode;
-                        return newNode;
-                    } else {
-                        current = current.left;
-                    }
-                } else if (value > current.value) {
-                    if (current.right == null) {
-                        current.right = newNode;
-                        return newNode;
-                    } else {
-                        current = current.right;
-                    }
+        }
+
+        let current = this.root;
+        while (true) {
+            if (value === current.value) return null;
+            if (value < current.value) {
+                if (current.left == null) {
+                    current.left = newNode;
+                    return newNode;
                 }
+                current = current.left;
+            } else {
+                if (current.right == null) {
+                    current.right = newNode;
+                    return newNode;
+                }
+                current = current.right;
             }
         }
     }
 
     isPresent(value: T): boolean {
-        if (this.root === null) return false;
         let current = this.root;
-        let nodeFound = false;
 
-        while (current && !nodeFound) {
-            if (value < current.value) {
-                if (current) {
-                    if (current.left != null) {
-                        current = current.left;
-                    }
-                }
-            } else if (value > current.value) {
-                if (current.right != null) {
-                    current = current.right;
-                }
-            } else {
-                nodeFound = true;
-            }
+        while (current) {
+            if (value === current.value) return true;
+            current = value < current.value ? current.left : current.right;
         }
-        return nodeFound ? nodeFound : false;
+
+        return false;
+    }
+
+    getRoot(): BSTNode<T> | null {
+        return this.root;
     }
 }

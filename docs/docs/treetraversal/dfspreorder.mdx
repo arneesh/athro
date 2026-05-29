@@ -1,0 +1,22 @@
+---
+sidebar_position: 2
+---
+
+import TreeVisualizer from '@site/src/components/visualizers/TreeVisualizer';
+
+# DFS Pre Order
+
+Visits the root first, then the left subtree, then the right subtree.
+
+## Interactive Visualization
+
+<TreeVisualizer mode="pre" />
+
+## Usage
+
+```tsx title="src/sample/preorder.ts"
+import { preOrder, Node } from 'athro';
+
+const root = new Node(3);
+const result = preOrder(root);
+```
