@@ -15,7 +15,7 @@
     "test": "turbo run test --filter=athro",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "changeset": "changeset add",
+    "changeset:add": "changeset add",
     "publish-packages": "turbo run build test && changeset version && changeset publish"
   },
   "devDependencies": {
