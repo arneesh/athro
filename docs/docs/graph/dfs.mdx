@@ -1,0 +1,30 @@
+---
+sidebar_position: 3
+---
+
+import GraphVisualizer from '@site/src/components/visualizers/GraphVisualizer';
+
+# Graph DFS
+
+Depth-first traversal of a graph, exploring as far as possible along each branch before backtracking.
+
+## Interactive Visualization
+
+<GraphVisualizer mode="dfs" />
+
+## Usage
+
+```tsx
+import { Graph, graphDfs } from 'athro';
+
+const graph = new Graph<string>();
+graph.addEdge('A', 'B');
+graph.addEdge('A', 'C');
+graph.addEdge('B', 'D');
+
+graphDfs(graph, 'A'); // ['A', 'B', 'D', 'C']
+```
+
+## Time Complexity
+
+O(V + E) where V is vertices and E is edges.

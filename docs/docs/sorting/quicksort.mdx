@@ -1,0 +1,30 @@
+---
+sidebar_position: 5
+---
+
+import SortingVisualizer from '@site/src/components/visualizers/SortingVisualizer';
+
+# Quick Sort
+
+Selects a pivot element, partitions the array around it, and recursively sorts the subarrays.
+
+## Interactive Visualization
+
+<SortingVisualizer algorithm="quick" defaultArray={[8, 3, 6, 2, 9, 1]} />
+
+## Usage
+
+```tsx title="src/sample/quicksort.ts"
+import { quickSort } from 'athro';
+
+const arr = [2, 6, 3, 8];
+const result = quickSort(arr);
+```
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(n log n) | Balanced partitions |
+| Average | O(n log n) | Typical pivot behavior |
+| Worst | O(n²) | Already sorted input with poor pivot choice |

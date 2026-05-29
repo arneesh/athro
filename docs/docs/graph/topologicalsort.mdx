@@ -1,0 +1,31 @@
+---
+sidebar_position: 5
+---
+
+# Topological Sort
+
+Linear ordering of vertices in a directed acyclic graph (DAG) such that for every edge u → v, u comes before v.
+
+## Usage
+
+```tsx
+import { Graph, topologicalSort } from 'athro';
+
+const graph = new Graph<string>(true);
+graph.addEdge('A', 'B');
+graph.addEdge('A', 'C');
+graph.addEdge('B', 'D');
+graph.addEdge('C', 'D');
+
+topologicalSort(graph); // ['A', 'B', 'C', 'D']
+```
+
+:::info Note
+
+Returns an empty array if the graph contains a cycle.
+
+:::
+
+## Time Complexity
+
+O(V + E) using Kahn's algorithm.

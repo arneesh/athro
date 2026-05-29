@@ -1,0 +1,8 @@
+{
+  "label": "Heap",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Heap-based priority queue data structure."
+  }
+}

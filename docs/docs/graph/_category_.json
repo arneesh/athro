@@ -1,0 +1,8 @@
+{
+  "label": "Graphs",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Graph data structure and classic graph algorithms including shortest path and topological ordering."
+  }
+}

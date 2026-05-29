@@ -1,0 +1,41 @@
+---
+sidebar_position: 1
+---
+
+# Hash Map
+
+A generic key-value store using separate chaining for collision resolution.
+
+## Usage
+
+```tsx
+import { HashMap } from 'athro';
+
+const map = new HashMap<string, number>();
+map.set('one', 1);
+map.set('two', 2);
+
+map.get('one');    // 1
+map.has('two');    // true
+map.delete('one'); // true
+map.keys();        // ['two']
+map.values();      // [2]
+```
+
+## Available Methods
+
+| Method | Description |
+| :--- | :--- |
+| `set(key, value)` | Store a key-value pair |
+| `get(key)` | Retrieve a value |
+| `has(key)` | Check if key exists |
+| `delete(key)` | Remove a key |
+| `keys()` | All keys |
+| `values()` | All values |
+| `getSize()` | Number of entries |
+
+## Time Complexity
+
+| Operation | Average | Worst |
+| :--- | :--- | :--- |
+| Get / Set / Delete | O(1) | O(n) |

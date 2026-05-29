@@ -1,0 +1,22 @@
+---
+sidebar_position: 4
+---
+
+import TreeVisualizer from '@site/src/components/visualizers/TreeVisualizer';
+
+# DFS Post Order
+
+Visits the left subtree, then the right subtree, then the root.
+
+## Interactive Visualization
+
+<TreeVisualizer mode="post" />
+
+## Usage
+
+```tsx title="src/sample/postorder.ts"
+import { postOrder, Node } from 'athro';
+
+const root = new Node(3);
+const result = postOrder(root);
+```

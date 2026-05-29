@@ -1,0 +1,34 @@
+---
+sidebar_position: 1
+---
+
+import TreeVisualizer from '@site/src/components/visualizers/TreeVisualizer';
+
+# Binary Search Tree
+
+A ordered tree where each node's left subtree contains smaller values and the right subtree contains larger values.
+
+## Interactive Visualization
+
+The visualization below shows tree traversal on a sample BST structure built from `[3, 7, 2, 9, 16, 11, 4]`.
+
+<TreeVisualizer mode="in" />
+
+## Usage
+
+```tsx title="src/sample/binarysearchtree.ts"
+import { BinarySearchTree } from 'athro';
+
+const bst = new BinarySearchTree<number>();
+bst.insert(3);
+bst.insert(7);
+bst.isPresent(7);
+```
+
+## Available Methods
+
+| Methods | Description | Syntax |
+| :---: | :-: | :-: |
+| insert | Add a value to the BST | `bst.insert(value)` |
+| isPresent | Check if a value exists | `bst.isPresent(value)` |
+| getRoot | Access the root node for traversals | `bst.getRoot()` |

@@ -1,0 +1,40 @@
+---
+sidebar_position: 1
+---
+
+# Min Heap
+
+A binary min-heap priority queue where the smallest element is always at the root.
+
+## Usage
+
+```tsx
+import { MinHeap } from 'athro';
+
+const heap = new MinHeap();
+heap.insert(8);
+heap.insert(3);
+heap.insert(6);
+
+heap.peek();       // 3
+heap.extractMin(); // 3
+heap.size();       // 2
+```
+
+## Available Methods
+
+| Method | Description |
+| :--- | :--- |
+| `insert(value)` | Add a value to the heap |
+| `extractMin()` | Remove and return the minimum |
+| `peek()` | View the minimum without removing |
+| `size()` | Number of elements |
+| `isEmpty()` | Whether the heap is empty |
+
+## Time Complexity
+
+| Operation | Complexity |
+| :--- | :--- |
+| Insert | O(log n) |
+| Extract min | O(log n) |
+| Peek | O(1) |

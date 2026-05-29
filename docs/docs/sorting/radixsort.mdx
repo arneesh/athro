@@ -1,0 +1,30 @@
+---
+sidebar_position: 8
+---
+
+import SortingVisualizer from '@site/src/components/visualizers/SortingVisualizer';
+
+# Radix Sort
+
+Sorts integers digit by digit using a stable sub-sort at each place value.
+
+## Interactive Visualization
+
+<SortingVisualizer algorithm="radix" defaultArray={[170, 45, 75, 90, 802, 24, 2, 66]} />
+
+## Usage
+
+```tsx
+import { radixSort } from 'athro';
+
+const arr = [170, 45, 75, 90, 802, 24, 2, 66];
+radixSort(arr);
+```
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(nk) | k is the number of digits |
+| Average | O(nk) | One pass per digit place |
+| Worst | O(nk) | Fixed number of digit passes |

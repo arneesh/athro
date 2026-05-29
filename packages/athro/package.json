@@ -15,7 +15,26 @@
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc"
   },
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arneesh/athro.git"
+  },
+  "homepage": "https://athro-docs.vercel.app",
+  "bugs": {
+    "url": "https://github.com/arneesh/athro/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
   "devDependencies": {
     "@types/node": "16.11.22",
     "@typescript-eslint/eslint-plugin": "^5.11.0",
@@ -61,15 +80,10 @@
     "searching",
     "sorting",
     "graphs",
-    "trees",
-    "react",
-    "vue",
-    "javascript",
-    "nodejs",
-    "angular",
-    "expressjs",
-    "svelte",
-    "bun",
-    "deno"
+    "dijkstra",
+    "topological sort",
+    "heap",
+    "hash map",
+    "typescript"
   ]
 }

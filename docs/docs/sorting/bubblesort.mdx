@@ -1,0 +1,30 @@
+---
+sidebar_position: 1
+---
+
+import SortingVisualizer from '@site/src/components/visualizers/SortingVisualizer';
+
+# Bubble Sort
+
+Repeatedly steps through the array, compares adjacent elements, and swaps them if they are in the wrong order.
+
+## Interactive Visualization
+
+<SortingVisualizer algorithm="bubble" defaultArray={[8, 3, 6, 2, 9, 1]} />
+
+## Usage
+
+```tsx title="src/sample/bubblesort.ts"
+import { bubbleSort } from 'athro';
+
+const arr = [2, 6, 3, 8];
+const result = bubbleSort(arr);
+```
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(n) | When the array is already sorted |
+| Average | O(n²) | Pairwise comparisons across passes |
+| Worst | O(n²) | Reverse-sorted input |

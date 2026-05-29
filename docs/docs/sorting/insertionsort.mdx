@@ -1,0 +1,30 @@
+---
+sidebar_position: 2
+---
+
+import SortingVisualizer from '@site/src/components/visualizers/SortingVisualizer';
+
+# Insertion Sort
+
+Builds the sorted array one element at a time by inserting each item into its correct position.
+
+## Interactive Visualization
+
+<SortingVisualizer algorithm="insertion" defaultArray={[8, 3, 6, 2, 9, 1]} />
+
+## Usage
+
+```tsx title="src/sample/insertionsort.ts"
+import { insertionSort } from 'athro';
+
+const arr = [2, 6, 3, 8];
+const result = insertionSort(arr);
+```
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(n) | Already sorted input |
+| Average | O(n²) | Shifting elements while inserting |
+| Worst | O(n²) | Reverse-sorted input |

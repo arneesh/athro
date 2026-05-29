@@ -1,0 +1,34 @@
+---
+sidebar_position: 1
+---
+
+import StackQueueVisualizer from '@site/src/components/visualizers/StackQueueVisualizer';
+
+# Queue
+
+A first-in, first-out (FIFO) data structure.
+
+## Interactive Visualization
+
+<StackQueueVisualizer mode="queue" />
+
+## Usage
+
+```tsx title="src/sample/queue.ts"
+import { Queue } from 'athro';
+
+const queue = new Queue<number>();
+queue.enqueue(3);
+queue.enqueue(7);
+queue.dequeue();
+```
+
+## Available Methods
+
+| Methods | Description | Syntax |
+| :---: | :-: | :-: |
+| enqueue | Add item to the queue | `queue.enqueue(value)` |
+| dequeue | Remove item from the queue | `queue.dequeue()` |
+| peek | Get the front item | `queue.peek()` |
+| isEmpty | Check if the queue is empty | `queue.isEmpty()` |
+| getSize | Get size of the queue | `queue.getSize()` |

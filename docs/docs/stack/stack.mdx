@@ -1,0 +1,34 @@
+---
+sidebar_position: 1
+---
+
+import StackQueueVisualizer from '@site/src/components/visualizers/StackQueueVisualizer';
+
+# Stack
+
+A last-in, first-out (LIFO) data structure.
+
+## Interactive Visualization
+
+<StackQueueVisualizer mode="stack" />
+
+## Usage
+
+```tsx title="src/sample/stack.ts"
+import { Stack } from 'athro';
+
+const stack = new Stack<number>();
+stack.push(3);
+stack.push(7);
+stack.pop();
+```
+
+## Available Methods
+
+| Methods | Description | Syntax |
+| :---: | :-: | :-: |
+| push | Add item to the stack | `stack.push(value)` |
+| pop | Remove item from the stack | `stack.pop()` |
+| top | Get the item at the top | `stack.top()` |
+| isEmpty | Check if the stack is empty | `stack.isEmpty()` |
+| getSize | Get size of the stack | `stack.getSize()` |

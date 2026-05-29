@@ -1,0 +1,22 @@
+---
+sidebar_position: 3
+---
+
+import TreeVisualizer from '@site/src/components/visualizers/TreeVisualizer';
+
+# DFS In Order
+
+Visits the left subtree, then the root, then the right subtree.
+
+## Interactive Visualization
+
+<TreeVisualizer mode="in" />
+
+## Usage
+
+```tsx title="src/sample/inorder.ts"
+import { inOrder, Node } from 'athro';
+
+const root = new Node(3);
+const result = inOrder(root);
+```

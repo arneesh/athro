@@ -1,0 +1,30 @@
+---
+sidebar_position: 4
+---
+
+import SearchVisualizer from '@site/src/components/visualizers/SearchVisualizer';
+
+# Exponential Search
+
+Finds a range by doubling the index, then performs binary search within that range. Ideal for unbounded or infinite sorted arrays.
+
+## Interactive Visualization
+
+<SearchVisualizer mode="binary" defaultArray={[2, 4, 8, 16, 32, 64, 128]} defaultTarget={32} />
+
+## Usage
+
+```tsx
+import { exponentialSearch } from 'athro';
+
+const arr = [2, 4, 8, 16, 32, 64, 128];
+const index = exponentialSearch(arr, 32);
+```
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(1) | Target at index 0 |
+| Average | O(log n) | Range finding + binary search |
+| Worst | O(log n) | Target at end of array |

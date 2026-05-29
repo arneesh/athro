@@ -1,24 +1,32 @@
 import { it, expect, describe } from 'vitest';
-import { BinarySearchTree } from '../src/datastructures/trees';
+import { BinarySearchTree } from '../src';
 
-describe('binary search tree test suit', () => {
-
-    it('insert - insert a node in the binary search tree ', () => {
-
-        let bst = new BinarySearchTree();
+describe('binary search tree', () => {
+    it('inserts values into the tree', () => {
+        const bst = new BinarySearchTree<number>();
         bst.insert(3);
-        const result = bst.isPresent(3);
-        expect(result).toBe(true);
+        expect(bst.isPresent(3)).toBe(true);
     });
 
-    it('isPresent - check if a particular node is present in the tree ', () => {
-
-        let bst = new BinarySearchTree();
+    it('finds existing values', () => {
+        const bst = new BinarySearchTree<number>();
         bst.insert(2);
         bst.insert(3);
         bst.insert(9);
-        const result = bst.isPresent(3);
-        expect(result).toBe(true);
+        expect(bst.isPresent(3)).toBe(true);
+    });
+
+    it('returns false for missing values', () => {
+        const bst = new BinarySearchTree<number>();
+        bst.insert(2);
+        bst.insert(3);
+        bst.insert(9);
+        expect(bst.isPresent(5)).toBe(false);
+    });
+
+    it('exposes the root node for traversals', () => {
+        const bst = new BinarySearchTree<number>();
+        bst.insert(3);
+        expect(bst.getRoot()?.value).toBe(3);
     });
 });
-

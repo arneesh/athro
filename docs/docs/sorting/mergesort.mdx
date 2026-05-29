@@ -1,0 +1,30 @@
+---
+sidebar_position: 4
+---
+
+import SortingVisualizer from '@site/src/components/visualizers/SortingVisualizer';
+
+# Merge Sort
+
+A divide-and-conquer algorithm that splits the array in half, sorts each half, and merges them back together.
+
+## Interactive Visualization
+
+<SortingVisualizer algorithm="merge" defaultArray={[8, 3, 6, 2, 9, 1]} />
+
+## Usage
+
+```tsx title="src/sample/mergesort.ts"
+import { mergeSort } from 'athro';
+
+const arr = [2, 6, 3, 8];
+const result = mergeSort(arr);
+```
+
+## Time Complexity
+
+| Case | Time Complexity | Description |
+| :---: | :-: | :-: |
+| Best | O(n log n) | Consistent divide-and-merge pattern |
+| Average | O(n log n) | Stable performance across inputs |
+| Worst | O(n log n) | Same recursive structure |
