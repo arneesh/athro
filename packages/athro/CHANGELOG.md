@@ -1,5 +1,11 @@
 # athro
 
+## 2.1.0
+
+### Minor Changes
+
+- f0cb4e2: Add graph algorithms (BFS, DFS, Dijkstra, topological sort), MinHeap, HashMap, and new sorting/searching algorithms. Export BinarySearchTree, fix BST isPresent, and add getRoot. Improve package exports and documentation.
+
 ## 2.0.4
 
 ### Patch Changes
